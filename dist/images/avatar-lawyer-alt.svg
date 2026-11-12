@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <circle cx="160" cy="160" r="145" fill="#F4F4F6" stroke="#18181B" stroke-width="3"/>
+  <circle cx="160" cy="160" r="132" fill="none" stroke="#D4D4D8" stroke-width="1.5" stroke-dasharray="4,6"/>
+
+  <!-- Short hair cute avatar with smile -->
+  <g id="cute-character-alt">
+    <!-- Back Hair -->
+    <path d="M 105 130 C 105 80, 135 60, 160 60 C 185 60, 215 80, 215 130 Z" fill="#18181B"/>
+
+    <!-- Neck & Blazer -->
+    <rect x="147" y="202" width="26" height="28" rx="4" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5"/>
+    <path d="M 95 290 L 110 235 C 120 222, 138 220, 147 225 L 173 225 C 182 220, 200 222, 210 235 L 225 290 Z" fill="#18181B"/>
+    <polygon points="147,225 160,265 173,225" fill="#FFFFFF" stroke="#18181B" stroke-width="2"/>
+    <!-- Small Bowtie / Tie -->
+    <path d="M 152 238 L 168 238 L 163 268 L 160 272 L 157 268 Z" fill="#18181B"/>
+
+    <!-- Head / Face -->
+    <ellipse cx="160" cy="155" rx="54" ry="56" fill="#FFFFFF" stroke="#18181B" stroke-width="3"/>
+
+    <!-- Cute Quiff Hair -->
+    <path d="M 106 140 C 106 95, 125 70, 160 70 C 180 70, 205 85, 214 115 C 205 110, 190 108, 175 112 C 160 115, 140 102, 125 110 C 114 116, 110 126, 106 140 Z" fill="#18181B"/>
+
+    <!-- Eyes (Happy Arcs) -->
+    <path d="M 132 154 Q 140 146 148 154" fill="none" stroke="#18181B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 172 154 Q 180 146 188 154" fill="none" stroke="#18181B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Eyebrows -->
+    <path d="M 130 140 Q 140 135 150 140" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 170 140 Q 180 135 190 140" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Big Cheerful Smile -->
+    <path d="M 148 178 Q 160 195 172 178" fill="none" stroke="#18181B" stroke-width="2.8" stroke-linecap="round"/>
+
+    <!-- Cute Blush -->
+    <ellipse cx="124" cy="170" rx="6" ry="3.5" fill="#E4E4E7"/>
+    <ellipse cx="196" cy="170" rx="6" ry="3.5" fill="#E4E4E7"/>
+
+    <!-- Ears -->
+    <ellipse cx="106" cy="160" rx="6" ry="10" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5"/>
+    <ellipse cx="214" cy="160" rx="6" ry="10" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5"/>
+  </g>
+</svg>

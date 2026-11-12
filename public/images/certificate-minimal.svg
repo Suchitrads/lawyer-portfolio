@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="auto">
+  <!-- Minimalist B&W Paper Base -->
+  <rect x="0" y="0" width="800" height="560" fill="#FFFFFF"/>
+  
+  <!-- Outer Minimalist Double Border -->
+  <rect x="24" y="24" width="752" height="512" fill="none" stroke="#18181B" stroke-width="2"/>
+  <rect x="32" y="32" width="736" height="496" fill="none" stroke="#E4E4E7" stroke-width="1"/>
+
+  <!-- Corner Minimalist Plus Marks -->
+  <g stroke="#18181B" stroke-width="1.5">
+    <line x1="20" y1="24" x2="28" y2="24"/><line x1="24" y1="20" x2="24" y2="28"/>
+    <line x1="772" y1="24" x2="780" y2="24"/><line x1="776" y1="20" x2="776" y2="28"/>
+    <line x1="20" y1="536" x2="28" y2="536"/><line x1="24" y1="532" x2="24" y2="540"/>
+    <line x1="772" y1="536" x2="780" y2="536"/><line x1="776" y1="532" x2="776" y2="540"/>
+  </g>
+
+  <!-- Authority Header -->
+  <text x="400" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#71717A" letter-spacing="3" text-anchor="middle">LEGAL REGULATORY COUNCIL &amp; BAR AUTHORITY</text>
+  <text x="400" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#18181B" letter-spacing="1" text-anchor="middle">CERTIFICATE OF PRACTICE &amp; ENROLMENT</text>
+  
+  <line x1="320" y1="145" x2="480" y2="145" stroke="#18181B" stroke-width="2"/>
+
+  <!-- Body copy -->
+  <text x="400" y="190" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#71717A" text-anchor="middle">THIS IS OFFICIAL RECORD CONFIRMING THAT</text>
+  
+  <!-- Lawyer Name -->
+  <text x="400" y="240" font-family="'Cormorant Garamond', Georgia, serif" font-size="36" font-weight="700" font-style="italic" fill="#18181B" text-anchor="middle">Maya Lin, LL.M.</text>
+  <line x1="260" y1="255" x2="540" y2="255" stroke="#D4D4D8" stroke-width="1"/>
+
+  <text x="400" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#27272A" text-anchor="middle">
+    is duly registered as an <tspan font-weight="700" fill="#18181B">Advocate / Legal Practitioner</tspan> under statutory authority
+  </text>
+  <text x="400" y="318" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#71717A" text-anchor="middle">
+    with active right of audience across Appellate &amp; High Court Jurisdictions.
+  </text>
+
+  <!-- Key Placeholder Grid -->
+  <g transform="translate(100, 350)">
+    <rect width="600" height="80" rx="4" fill="#F4F4F6" stroke="#E4E4E7" stroke-width="1"/>
+    
+    <!-- Item 1 -->
+    <text x="30" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#71717A" letter-spacing="1">REGISTRATION ENROLMENT</text>
+    <text x="30" y="54" font-family="monospace" font-size="14" font-weight="700" fill="#18181B">[BAR/ENR/2018/XXXX]</text>
+
+    <line x1="220" y1="15" x2="220" y2="65" stroke="#E4E4E7" stroke-width="1"/>
+
+    <!-- Item 2 -->
+    <text x="245" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#71717A" letter-spacing="1">DATE OF ADMISSION</text>
+    <text x="245" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#18181B">18 September 2018</text>
+
+    <line x1="420" y1="15" x2="420" y2="65" stroke="#E4E4E7" stroke-width="1"/>
+
+    <!-- Item 3 -->
+    <text x="445" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#71717A" letter-spacing="1">STATUS</text>
+    <text x="445" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#18181B">Active • Good Standing</text>
+  </g>
+
+  <!-- Minimalist Black Seal (Bottom Left) -->
+  <g transform="translate(120, 460)">
+    <circle cx="28" cy="15" r="28" fill="#18181B"/>
+    <circle cx="28" cy="15" r="25" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="28" y="11" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">VERIFIED</text>
+    <text x="28" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="600" fill="#A1A1AA" text-anchor="middle">OFFICIAL</text>
+  </g>
+
+  <!-- Signatures -->
+  <g transform="translate(480, 470)">
+    <path d="M 10 5 Q 35 -15 65 0 T 120 -5" fill="none" stroke="#18181B" stroke-width="1.8"/>
+    <line x1="0" y1="15" x2="180" y2="15" stroke="#A1A1AA" stroke-width="1"/>
+    <text x="90" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#18181B" text-anchor="middle">Secretary to the Bar Council</text>
+  </g>
+</svg>

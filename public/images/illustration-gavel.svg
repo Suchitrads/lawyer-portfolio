@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Minimalist Grayscale Judicial Gavel and Sound Block -->
+  <!-- Sound block base -->
+  <path d="M 70 85 L 140 85 L 135 102 L 65 102 Z" fill="#F1F1F1" stroke="#111111" stroke-width="2"/>
+  <ellipse cx="102" cy="85" rx="35" ry="8" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+
+  <!-- Gavel Head (Tilted) -->
+  <g transform="rotate(-28 65 45)">
+    <!-- Main Cylinder -->
+    <rect x="50" y="25" width="46" height="24" rx="2" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+    <!-- Metal Rings on ends -->
+    <rect x="44" y="22" width="6" height="30" rx="1.5" fill="#111111"/>
+    <rect x="96" y="22" width="6" height="30" rx="1.5" fill="#111111"/>
+    <line x1="60" y1="25" x2="60" y2="49" stroke="#777777" stroke-width="1.2"/>
+    <line x1="86" y1="25" x2="86" y2="49" stroke="#777777" stroke-width="1.2"/>
+
+    <!-- Handle -->
+    <path d="M 73 49 L 73 110 L 71 114 L 75 114 L 73 110" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="73" cy="116" r="4.5" fill="#111111"/>
+  </g>
+
+  <!-- Impact motion accents -->
+  <path d="M 68 76 L 60 70" stroke="#777777" stroke-width="1.5"/>
+  <path d="M 80 72 L 80 64" stroke="#777777" stroke-width="1.5"/>
+</svg>

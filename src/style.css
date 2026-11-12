@@ -1,0 +1,354 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #111111;
+  --color-dark: #18181B;
+  --color-charcoal: #27272A;
+  --color-subtle: #71717A;
+  --color-muted: #A1A1AA;
+  --color-border: #E4E4E7;
+  --color-border-subtle: #F0F0F2;
+  --color-light-grey: #F4F4F6;
+  --color-surface-hover: #ECECEF;
+  --color-white: #FFFFFF;
+
+  --font-sans: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+  color: #111111;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #111111;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Offset for fixed navigation */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Custom Scroll Progress Bar (Minimalist Black Line) */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #111111;
+  width: 0%;
+  z-index: 70;
+  transition: width 50ms linear;
+}
+
+/* Minimalist Custom Cursor (Desktop Only) */
+@media (pointer: fine) {
+  .custom-cursor {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid #111111;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.12s ease, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+  }
+  .custom-cursor.hovering {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(17, 17, 17, 0.08);
+    border-color: #111111;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+/* Floating Animation for Avatar */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.avatar-float {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+/* Availability Pulse Dot */
+.pulse-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #18181B;
+  box-shadow: 0 0 0 0 rgba(24, 24, 27, 0.4);
+  animation: pulseAnimation 2s infinite;
+}
+
+@keyframes pulseAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(24, 24, 27, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(24, 24, 27, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(24, 24, 27, 0);
+  }
+}
+
+/* Modern Minimalist Buttons */
+.btn-black {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: 1.5px solid #111111;
+  border-radius: 9999px;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  background-color: #FFFFFF;
+  color: #111111;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #111111;
+  border: 1.5px solid #111111;
+  border-radius: 9999px;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: #111111;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Creative Interactive Practice List */
+.expertise-item {
+  border-bottom: 1.5px solid #E4E4E7;
+  padding: 1.75rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.expertise-item:hover,
+.expertise-item.active {
+  background-color: #F4F4F6;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-color: #111111;
+}
+
+.expertise-item .item-number {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #71717A;
+  transition: color 0.2s ease;
+}
+
+.expertise-item:hover .item-number,
+.expertise-item.active .item-number {
+  color: #111111;
+  font-weight: bold;
+}
+
+.expertise-item .item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.expertise-item .item-arrow {
+  transition: transform 0.25s ease;
+}
+
+.expertise-item:hover .item-arrow,
+.expertise-item.active .item-arrow {
+  transform: translateX(4px);
+}
+
+.expertise-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  opacity: 0;
+}
+
+.expertise-item.active .expertise-item-content {
+  max-height: 250px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+/* Nav Link Hover Underline Animation */
+.minimal-nav-link {
+  position: relative;
+  color: #27272A;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.minimal-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #111111;
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.minimal-nav-link:hover,
+.minimal-nav-link.active-nav {
+  color: #111111;
+}
+
+.minimal-nav-link:hover::after,
+.minimal-nav-link.active-nav::after {
+  width: 100%;
+}
+
+/* Minimalist Form Inputs */
+.input-minimal {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E4E4E7;
+  border-radius: 6px;
+  color: #111111;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-minimal:focus {
+  outline: none;
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.08);
+}
+
+.input-minimal::placeholder {
+  color: #A1A1AA;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid #111111;
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   MODERN WEB GUIDANCE (MWG) DIALOG SPECIFICATION
+   - Native <dialog>
+   - dialog:modal with overscroll-behavior: contain
+   - dialog::backdrop with overflow: hidden and overscroll-behavior: contain
+   ========================================================================== */
+
+dialog.minimal-modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border: 2px solid #111111;
+  background-color: #FFFFFF;
+  color: #111111;
+  border-radius: 8px;
+  padding: 0;
+  max-width: 720px;
+  width: 92%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+dialog:modal {
+  /* MANDATORY PER MWG: Prevent scroll chaining */
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  /* MANDATORY PER MWG: Make backdrop a non-scrollable scroll container */
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(17, 17, 17, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Back to Top Floating Button */
+.back-to-top-btn {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Print Styles */
+@media print {
+  .scroll-progress-bar,
+  .custom-cursor,
+  nav,
+  header,
+  .btn-black,
+  .btn-outline,
+  #floating-cms-btn,
+  #cms-panel {
+    display: none !important;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}

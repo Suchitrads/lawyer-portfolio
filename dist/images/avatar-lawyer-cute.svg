@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <!-- Subtle drop shadow for sticker effect -->
+    <filter id="stickerGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Background Pod -->
+  <circle cx="160" cy="160" r="145" fill="#F4F4F6" stroke="#18181B" stroke-width="3" filter="url(#stickerGlow)"/>
+  
+  <!-- Subtle inner dashed orbit -->
+  <circle cx="160" cy="160" r="132" fill="none" stroke="#D4D4D8" stroke-width="1.5" stroke-dasharray="4,6"/>
+
+  <!-- Character Group -->
+  <g id="cute-character">
+    <!-- Back Hair / Silhouette -->
+    <path d="M 95 155 C 85 90, 130 55, 160 55 C 190 55, 235 90, 225 155 C 235 180, 235 210, 225 220 C 215 185, 215 140, 210 130 C 200 110, 120 110, 110 130 C 105 140, 105 185, 95 220 C 85 210, 85 180, 95 155 Z" fill="#18181B"/>
+
+    <!-- Neck -->
+    <rect x="146" y="200" width="28" height="30" rx="6" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5"/>
+
+    <!-- Dark Smart Blazer / Jacket -->
+    <path d="M 90 290 L 105 235 C 115 222, 135 220, 146 225 L 174 225 C 185 220, 205 222, 215 235 L 230 290 Z" fill="#18181B"/>
+    
+    <!-- White Collared Shirt -->
+    <polygon points="146,225 160,265 174,225" fill="#FFFFFF" stroke="#18181B" stroke-width="2"/>
+    
+    <!-- Lawyer White Advocate Neckband / Tabs (Subtle playful nod to the profession) -->
+    <g fill="#FFFFFF" stroke="#18181B" stroke-width="1.8">
+      <rect x="152" y="240" width="7" height="35" rx="2"/>
+      <rect x="161" y="240" width="7" height="35" rx="2"/>
+    </g>
+
+    <!-- Lapels of Blazer -->
+    <path d="M 125 230 L 148 275 L 132 285 Z" fill="#27272A" stroke="#18181B" stroke-width="1.5"/>
+    <path d="M 195 230 L 172 275 L 188 285 Z" fill="#27272A" stroke="#18181B" stroke-width="1.5"/>
+
+    <!-- Little Star Pin on Lapel -->
+    <polygon points="120,250 122,254 126,254 123,257 124,261 120,258 116,261 117,257 114,254 118,254" fill="#FFFFFF" stroke="#18181B" stroke-width="1"/>
+
+    <!-- Head / Face -->
+    <ellipse cx="160" cy="155" rx="55" ry="58" fill="#FFFFFF" stroke="#18181B" stroke-width="3"/>
+
+    <!-- Hair Front / Cute Bangs -->
+    <path d="M 108 140 C 110 100, 130 80, 160 80 C 190 80, 210 100, 212 140 C 205 125, 190 115, 175 118 C 160 122, 145 110, 130 115 C 118 120, 112 130, 108 140 Z" fill="#18181B"/>
+
+    <!-- Cute Round Glasses (Trendy, friendly, scholarly) -->
+    <!-- Left Lens -->
+    <circle cx="138" cy="155" r="19" fill="#FFFFFF" stroke="#18181B" stroke-width="3"/>
+    <!-- Right Lens -->
+    <circle cx="182" cy="155" r="19" fill="#FFFFFF" stroke="#18181B" stroke-width="3"/>
+    <!-- Bridge -->
+    <path d="M 157 153 Q 160 149 163 153" fill="none" stroke="#18181B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Temples -->
+    <line x1="119" y1="153" x2="108" y2="150" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="201" y1="153" x2="212" y2="150" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Cheerful Eyes Behind Glasses -->
+    <ellipse cx="138" cy="156" rx="5.5" ry="6.5" fill="#18181B"/>
+    <circle cx="140" cy="153.5" r="2.2" fill="#FFFFFF"/>
+    
+    <ellipse cx="182" cy="156" rx="5.5" ry="6.5" fill="#18181B"/>
+    <circle cx="184" cy="153.5" r="2.2" fill="#FFFFFF"/>
+
+    <!-- Friendly Eyebrows -->
+    <path d="M 127 130 Q 138 124 148 128" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 172 128 Q 182 124 193 130" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Cute Smile -->
+    <path d="M 151 184 Q 160 193 169 184" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Cute Blush Dots (Subtle Stippling in B&W) -->
+    <g fill="#A1A1AA">
+      <circle cx="118" cy="174" r="2"/>
+      <circle cx="123" cy="175" r="2.5"/>
+      <circle cx="128" cy="174" r="2"/>
+      
+      <circle cx="192" cy="174" r="2"/>
+      <circle cx="197" cy="175" r="2.5"/>
+      <circle cx="202" cy="174" r="2"/>
+    </g>
+
+    <!-- Ears -->
+    <ellipse cx="106" cy="160" rx="6" ry="10" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5"/>
+    <ellipse cx="214" cy="160" rx="6" ry="10" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5"/>
+  </g>
+
+  <!-- Sparkles / Playful Accent Doodles -->
+  <g stroke="#18181B" stroke-width="2" fill="none">
+    <!-- Star Sparkle Left -->
+    <path d="M 52 100 Q 60 100 60 92 Q 60 100 68 100 Q 60 100 60 108 Q 60 100 52 100 Z" fill="#18181B"/>
+    <!-- Small Dot Sparkles -->
+    <circle cx="78" cy="85" r="2" fill="#18181B"/>
+    <circle cx="260" cy="95" r="2.5" fill="#18181B"/>
+    <!-- Star Sparkle Right -->
+    <path d="M 245 130 Q 252 130 252 123 Q 252 130 259 130 Q 252 130 252 137 Q 252 130 245 130 Z" fill="#18181B"/>
+  </g>
+</svg>

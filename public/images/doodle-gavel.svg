@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Gavel Head -->
+  <rect x="24" y="10" width="28" height="14" rx="2" transform="rotate(-30 38 17)" fill="#FFFFFF"/>
+  <line x1="28" y1="12" x2="35" y2="24"/>
+  <line x1="43" y1="21" x2="50" y2="33"/>
+  <!-- Handle -->
+  <line x1="33" y1="22" x2="14" y2="55"/>
+  <line x1="10" y1="52" x2="18" y2="58"/>
+  <!-- Sound block / impact lines -->
+  <path d="M 32 54 L 54 54" stroke-width="3"/>
+  <path d="M 40 44 L 43 40"/>
+  <path d="M 46 44 L 50 42"/>
+</svg>

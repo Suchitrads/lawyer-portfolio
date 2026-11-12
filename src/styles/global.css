@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-black: #111111;
+  --color-white: #FFFFFF;
+  --color-bg-light: #FAFAFA;
+  --color-light-grey: #F1F1F1;
+  --color-secondary-grey: #777777;
+  --color-border-grey: #E5E5E5;
+
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  background-color: #FAFAFA;
+  color: #111111;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #111111;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Offset for fixed navbar */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Editorial Serif Headings */
+.font-editorial-heading {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Arched Portrait Framing (Exact curve from reference) */
+.portrait-arch-frame {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  overflow: hidden;
+  border: 1px solid #E5E5E5;
+  background-color: #F1F1F1;
+}
+
+/* Offset Black Rectangular Frame Behind Portrait (About Me) */
+.offset-frame-wrapper {
+  position: relative;
+}
+
+.offset-frame-shadow {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  z-index: 0;
+}
+
+.offset-frame-image {
+  position: relative;
+  z-index: 10;
+  border: 1px solid #111111;
+  background-color: #FFFFFF;
+}
+
+/* Custom Scroll Progress Bar */
+.scroll-progress-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: #111111;
+  width: 0%;
+  z-index: 80;
+  transition: width 50ms linear;
+}
+
+/* Focus Visible */
+:focus-visible {
+  outline: 2px solid #111111;
+  outline-offset: 3px;
+}
+
+/* Modern Web Guidance (MWG) Dialog Rules */
+dialog.editorial-modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border: 1px solid #111111;
+  background-color: #FFFFFF;
+  color: #111111;
+  max-width: 780px;
+  width: 92%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(17, 17, 17, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Print Styles */
+@media print {
+  header, nav, button, .scroll-progress-line {
+    display: none !important;
+  }
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}

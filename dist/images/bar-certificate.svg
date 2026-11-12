@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="100%" height="auto">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFBF7"/>
+      <stop offset="100%" stop-color="#F5EFE3"/>
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059"/>
+      <stop offset="50%" stop-color="#E5C77A"/>
+      <stop offset="100%" stop-color="#937233"/>
+    </linearGradient>
+    <linearGradient id="sealGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DE9C"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#7A5614"/>
+    </linearGradient>
+    <pattern id="guilloche" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0,20 Q 10,0 20,20 T 40,20" fill="none" stroke="rgba(197, 160, 89, 0.08)" stroke-width="0.8"/>
+      <path d="M 0,20 Q 10,40 20,20 T 40,20" fill="none" stroke="rgba(197, 160, 89, 0.08)" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Document Base Paper -->
+  <rect x="0" y="0" width="900" height="640" fill="url(#certBg)"/>
+  <rect x="0" y="0" width="900" height="640" fill="url(#guilloche)"/>
+
+  <!-- Ornate Outer Border -->
+  <rect x="25" y="25" width="850" height="590" fill="none" stroke="url(#goldBorder)" stroke-width="4"/>
+  <rect x="35" y="35" width="830" height="570" fill="none" stroke="#0F1C2E" stroke-width="1.2"/>
+  <rect x="42" y="42" width="816" height="556" fill="none" stroke="url(#goldBorder)" stroke-width="0.8" stroke-dasharray="3,3"/>
+
+  <!-- Corner Flourishes -->
+  <g stroke="url(#goldBorder)" stroke-width="1.5" fill="none">
+    <path d="M 25 55 L 55 25 M 30 65 L 65 30 M 42 42 L 65 42 M 42 42 L 42 65"/>
+    <path d="M 875 55 L 845 25 M 870 65 L 835 30 M 858 42 L 835 42 M 858 42 L 858 65"/>
+    <path d="M 25 585 L 55 615 M 30 575 L 65 610 M 42 598 L 65 598 M 42 598 L 42 575"/>
+    <path d="M 875 585 L 845 615 M 870 575 L 835 610 M 858 598 L 835 598 M 858 598 L 858 575"/>
+  </g>
+
+  <!-- Regulatory Authority Header -->
+  <text x="450" y="95" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="14" font-weight="700" fill="#937233" letter-spacing="4" text-anchor="middle">BAR COUNCIL JURISDICTION • REGULATORY BOARD</text>
+  <text x="450" y="140" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#0C1829" letter-spacing="2" text-anchor="middle">CERTIFICATE OF ENROLMENT &amp; PRACTICE</text>
+  <line x1="280" y1="155" x2="620" y2="155" stroke="url(#goldBorder)" stroke-width="1.5"/>
+  <circle cx="450" cy="155" r="3.5" fill="#C5A059"/>
+
+  <!-- Formal Legal Text -->
+  <text x="450" y="200" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#4A5568" text-anchor="middle" letter-spacing="0.5">THIS IS TO CERTIFY ACCORDING TO THE ADVOCATES ACT &amp; REGULATORY CHARTER THAT</text>
+  
+  <!-- Candidate Name -->
+  <text x="450" y="252" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-size="36" font-weight="700" font-style="italic" fill="#0A1626" text-anchor="middle">Elena V. Moretti, LL.M.</text>
+  <line x1="230" y1="268" x2="670" y2="268" stroke="url(#goldBorder)" stroke-width="0.75"/>
+
+  <!-- Enrolment Details -->
+  <text x="450" y="306" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" fill="#2D3748" text-anchor="middle">
+    has been duly admitted and enrolled as an <tspan font-weight="700" fill="#0C1829">Advocate</tspan> on the Roll of this Council
+  </text>
+  <text x="450" y="328" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#4A5568" text-anchor="middle">
+    and is entitled under law to practice in all High Courts, Appellate Tribunals &amp; the Supreme Court.
+  </text>
+
+  <!-- Key Credential Data Box -->
+  <g transform="translate(140, 360)">
+    <rect width="620" height="96" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Item 1 -->
+    <text x="35" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#718096" letter-spacing="1">ENROLMENT NUMBER</text>
+    <text x="35" y="58" font-family="'Plus Jakarta Sans', monospace" font-size="15" font-weight="700" fill="#0F1C2E">[BCI/D/2841/2012]</text>
+    <text x="35" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#A0AEC0">Jurisdiction: Bar Council of Delhi</text>
+
+    <line x1="220" y1="18" x2="220" y2="78" stroke="#EDF2F7" stroke-width="1.2"/>
+
+    <!-- Item 2 -->
+    <text x="245" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#718096" letter-spacing="1">DATE OF ADMISSION</text>
+    <text x="245" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.5" font-weight="700" fill="#0F1C2E">14 October 2012</text>
+    <text x="245" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#38A169">✓ Verified Good Standing</text>
+
+    <line x1="420" y1="18" x2="420" y2="78" stroke="#EDF2F7" stroke-width="1.2"/>
+
+    <!-- Item 3 -->
+    <text x="445" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#718096" letter-spacing="1">CERTIFICATE OF PRACTICE</text>
+    <text x="445" y="58" font-family="'Plus Jakarta Sans', monospace" font-size="14" font-weight="700" fill="#0F1C2E">[COP/2026/ACTIVE-8910]</text>
+    <text x="445" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#A0AEC0">Valid Across All India Courts</text>
+  </g>
+
+  <!-- Official Embossed Seal Graphic (Bottom Left) -->
+  <g transform="translate(180, 520)">
+    <circle cx="36" cy="0" r="42" fill="url(#sealGold)" stroke="#7A5614" stroke-width="1.2"/>
+    <circle cx="36" cy="0" r="37" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <circle cx="36" cy="0" r="30" fill="url(#sealGold)"/>
+    <text x="36" y="-8" font-family="'Cinzel', Georgia, serif" font-size="7.5" font-weight="700" fill="#2E1C03" text-anchor="middle" letter-spacing="1">OFFICIAL SEAL</text>
+    <text x="36" y="8" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" fill="#2E1C03" text-anchor="middle">VERIFIED CREDENTIAL</text>
+    <text x="36" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="700" fill="#2E1C03" text-anchor="middle">★ ★ ★</text>
+  </g>
+
+  <!-- Signatures -->
+  <g transform="translate(460, 520)">
+    <!-- Signature Line 1 -->
+    <path d="M 20 -15 Q 40 -35 70 -15 T 120 -10 T 160 -18" fill="none" stroke="#1A202C" stroke-width="1.8"/>
+    <line x1="10" y1="0" x2="180" y2="0" stroke="#718096" stroke-width="0.75"/>
+    <text x="95" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#2D3748" text-anchor="middle">H. C. Krishnamurthy</text>
+    <text x="95" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#718096" text-anchor="middle">Registrar &amp; Secretary to the Council</text>
+  </g>
+
+  <g transform="translate(680, 520)">
+    <!-- Signature Line 2 -->
+    <path d="M 20 -12 Q 50 -38 80 -14 T 130 -8 T 160 -22" fill="none" stroke="#1A202C" stroke-width="1.8"/>
+    <line x1="10" y1="0" x2="180" y2="0" stroke="#718096" stroke-width="0.75"/>
+    <text x="95" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#2D3748" text-anchor="middle">Hon. Justice (Retd.) A. Ward</text>
+    <text x="95" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#718096" text-anchor="middle">Chairman, Enrolment Committee</text>
+  </g>
+
+  <!-- Security watermark notice at bottom -->
+  <text x="450" y="604" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#A0AEC0" text-anchor="middle" letter-spacing="1">
+    DIGITALLY REFERENCED PROFESSIONAL LICENCE PLACEHOLDER • REPRODUCTION RESTRICTED UNDER BAR ETHICS
+  </text>
+</svg>

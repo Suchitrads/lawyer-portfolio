@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640" width="500" height="640">
+  <defs>
+    <linearGradient id="bgGray" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAEAEA"/>
+      <stop offset="60%" stop-color="#D4D4D8"/>
+      <stop offset="100%" stop-color="#A1A1AA"/>
+    </linearGradient>
+    <linearGradient id="faceShade" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EFEFEF"/>
+      <stop offset="100%" stop-color="#D1D1D6"/>
+    </linearGradient>
+    <linearGradient id="suitBlack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#242426"/>
+      <stop offset="60%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#08080A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background in Arch-friendly proportions -->
+  <rect width="500" height="640" fill="url(#bgGray)"/>
+  
+  <!-- Subtle Architectural Arch Contour in Background -->
+  <path d="M 50 640 L 50 220 C 50 110, 140 20, 250 20 C 360 20, 450 110, 450 220 L 450 640" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+
+  <!-- Lawyer Portrait: Aarohi Desai (High-contrast grayscale editorial photograph style) -->
+  <g id="figure">
+    <!-- Back Hair / Silhouette -->
+    <path d="M 180 180 C 140 160, 160 80, 250 80 C 340 80, 360 160, 320 180 C 360 260, 350 360, 320 400 L 180 400 C 150 360, 140 260, 180 180 Z" fill="#111111"/>
+
+    <!-- Dark Tailored Suit / Robes -->
+    <path d="M 80 640 L 110 460 C 130 380, 180 340, 210 330 L 290 330 C 320 340, 370 380, 390 460 L 420 640 Z" fill="url(#suitBlack)"/>
+    
+    <!-- Lapels -->
+    <path d="M 195 335 L 245 490 L 175 495 L 140 400 Z" fill="#18181B" stroke="#333333" stroke-width="1.2"/>
+    <path d="M 305 335 L 255 490 L 325 495 L 360 400 Z" fill="#18181B" stroke="#333333" stroke-width="1.2"/>
+
+    <!-- Pure White Collared Shirt -->
+    <polygon points="220,330 250,420 280,330" fill="#FFFFFF"/>
+
+    <!-- Advocate White Bands (Subtle, distinguished) -->
+    <g fill="#FFFFFF" stroke="#E5E5E5" stroke-width="0.8">
+      <rect x="238" y="380" width="10" height="70" rx="1"/>
+      <rect x="252" y="380" width="10" height="70" rx="1"/>
+    </g>
+
+    <!-- Neck -->
+    <path d="M 215 260 C 215 300, 225 335, 250 335 C 275 335, 285 300, 285 260 Z" fill="url(#faceShade)"/>
+    <path d="M 225 295 C 240 320, 260 320, 275 295 Z" fill="#BBBBBF" opacity="0.4"/>
+
+    <!-- Face Oval -->
+    <path d="M 190 200 C 190 270, 215 300, 250 300 C 285 300, 310 270, 310 200 C 310 135, 290 115, 250 115 C 210 115, 190 135, 190 200 Z" fill="url(#faceShade)"/>
+
+    <!-- Hair Front Waves (Dark, sleek, side-parted editorial chignon) -->
+    <path d="M 185 180 C 185 125, 215 95, 250 95 C 290 95, 315 125, 315 180 C 310 160, 305 140, 295 130 C 275 110, 240 108, 220 120 C 205 130, 195 150, 185 180 Z" fill="#111111"/>
+    
+    <!-- Eyes & Brows (Sharp, focused, professional) -->
+    <!-- Left Brow -->
+    <path d="M 210 175 Q 224 170 236 175" stroke="#111111" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Right Brow -->
+    <path d="M 264 175 Q 276 170 290 175" stroke="#111111" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Left Eye -->
+    <ellipse cx="224" cy="186" rx="7" ry="4" fill="#FFFFFF"/>
+    <circle cx="225" cy="186" r="3" fill="#111111"/>
+    <circle cx="226" cy="185" r="1" fill="#FFFFFF"/>
+    <path d="M 217 185 Q 225 181 232 185" stroke="#111111" stroke-width="1.8" fill="none"/>
+
+    <!-- Right Eye -->
+    <ellipse cx="276" cy="186" rx="7" ry="4" fill="#FFFFFF"/>
+    <circle cx="275" cy="186" r="3" fill="#111111"/>
+    <circle cx="276" cy="185" r="1" fill="#FFFFFF"/>
+    <path d="M 269 185 Q 276 181 284 185" stroke="#111111" stroke-width="1.8" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M 250 178 L 248 215 L 254 217" stroke="#777777" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Lips (Composed, confident smile) -->
+    <path d="M 236 242 Q 250 240 264 242 Q 250 252 236 242 Z" fill="#3A3A3C"/>
+    <path d="M 238 242 Q 250 244 262 242" stroke="#111111" stroke-width="1.2" fill="none"/>
+
+    <!-- Elegant Wireframe Spectacles -->
+    <rect x="214" y="178" width="22" height="16" rx="3" fill="none" stroke="#111111" stroke-width="1.5"/>
+    <rect x="264" y="178" width="22" height="16" rx="3" fill="none" stroke="#111111" stroke-width="1.5"/>
+    <line x1="236" y1="183" x2="264" y2="183" stroke="#111111" stroke-width="1.5"/>
+    <line x1="214" y1="183" x2="202" y2="180" stroke="#111111" stroke-width="1.2"/>
+    <line x1="286" y1="183" x2="298" y2="180" stroke="#111111" stroke-width="1.2"/>
+  </g>
+</svg>

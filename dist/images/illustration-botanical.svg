@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 160" width="140" height="160" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Minimalist Grayscale Olive Branch / Laurel Botanical Engraving -->
+  <path d="M 30 140 C 45 110, 65 70, 105 20" stroke="#111111" stroke-width="2"/>
+  
+  <!-- Pairs of Leaves -->
+  <!-- Leaf 1 -->
+  <path d="M 45 115 Q 60 110 58 98 Q 45 102 45 115 Z" fill="#F1F1F1" stroke="#111111" stroke-width="1.5"/>
+  <path d="M 40 120 Q 25 115 28 102 Q 40 108 40 120 Z" fill="#FFFFFF" stroke="#111111" stroke-width="1.5"/>
+
+  <!-- Leaf 2 -->
+  <path d="M 60 90 Q 80 85 76 72 Q 62 76 60 90 Z" fill="#FFFFFF" stroke="#111111" stroke-width="1.5"/>
+  <path d="M 55 95 Q 40 90 42 78 Q 54 84 55 95 Z" fill="#F1F1F1" stroke="#111111" stroke-width="1.5"/>
+
+  <!-- Leaf 3 -->
+  <path d="M 78 65 Q 100 58 96 46 Q 80 50 78 65 Z" fill="#F1F1F1" stroke="#111111" stroke-width="1.5"/>
+  <path d="M 72 70 Q 56 64 60 52 Q 72 58 72 70 Z" fill="#FFFFFF" stroke="#111111" stroke-width="1.5"/>
+
+  <!-- Tip Leaf -->
+  <path d="M 98 32 Q 115 22 108 12 Q 95 18 98 32 Z" fill="#FFFFFF" stroke="#111111" stroke-width="1.5"/>
+
+  <!-- Little Berries -->
+  <circle cx="56" cy="98" r="2.5" fill="#111111"/>
+  <circle cx="74" cy="72" r="2.5" fill="#111111"/>
+  <circle cx="94" cy="40" r="2.5" fill="#111111"/>
+</svg>

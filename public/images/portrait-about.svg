@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 560" width="450" height="560">
+  <defs>
+    <linearGradient id="aboutShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F4F6"/>
+      <stop offset="100%" stop-color="#D4D4D8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Grayscale Canvas -->
+  <rect width="450" height="560" fill="url(#aboutShade)"/>
+  
+  <!-- Subtle Grid Pattern in background -->
+  <g stroke="#E5E5E5" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="140" x2="450" y2="140"/>
+    <line x1="0" y1="280" x2="450" y2="280"/>
+    <line x1="0" y1="420" x2="450" y2="420"/>
+    <line x1="150" y1="0" x2="150" y2="560"/>
+    <line x1="300" y1="0" x2="300" y2="560"/>
+  </g>
+
+  <!-- Advocate Aarohi Desai in Library / Consultation Setting -->
+  <g transform="translate(-25, -40)">
+    <!-- Shoulders & Coat -->
+    <path d="M 100 600 L 130 430 C 150 360, 200 320, 250 310 L 250 310 C 300 320, 350 360, 370 430 L 400 600 Z" fill="#18181B"/>
+    <!-- Collar & Shirt -->
+    <polygon points="230,310 250,390 270,310" fill="#FFFFFF"/>
+    <rect x="242" y="350" width="8" height="60" rx="1" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="0.8"/>
+    <rect x="252" y="350" width="8" height="60" rx="1" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="0.8"/>
+    <!-- Lapels -->
+    <path d="M 215 315 L 250 440 L 195 440 Z" fill="#242426"/>
+    <path d="M 285 315 L 250 440 L 305 440 Z" fill="#242426"/>
+
+    <!-- Head & Hair -->
+    <circle cx="250" cy="220" r="62" fill="#EAEAEA"/>
+    <path d="M 195 210 C 195 140, 225 105, 250 105 C 275 105, 305 140, 305 210 C 298 180, 280 150, 250 150 C 220 150, 202 180, 195 210 Z" fill="#111111"/>
+
+    <!-- Spectacles & Facial Features -->
+    <rect x="222" y="195" width="20" height="15" rx="3" fill="none" stroke="#111111" stroke-width="1.8"/>
+    <rect x="258" y="195" width="20" height="15" rx="3" fill="none" stroke="#111111" stroke-width="1.8"/>
+    <line x1="242" y1="200" x2="258" y2="200" stroke="#111111" stroke-width="1.8"/>
+    <circle cx="232" cy="202" r="2.8" fill="#111111"/>
+    <circle cx="268" cy="202" r="2.8" fill="#111111"/>
+    
+    <!-- Nose & Smile -->
+    <path d="M 250 195 L 248 228 L 253 230" stroke="#777777" stroke-width="1.5" fill="none"/>
+    <path d="M 238 250 Q 250 258 262 250" stroke="#111111" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Editorial Inner Border -->
+  <rect x="15" y="15" width="420" height="530" fill="none" stroke="#111111" stroke-width="1"/>
+</svg>
